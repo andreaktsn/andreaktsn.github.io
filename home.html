@@ -1,0 +1,17 @@
+<head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    {{if .Wrong}}
+    <label>Id not found!</label>
+    {{else}}
+    <label>Id: {{.Id}}</label><br>
+    <label>Name: {{.Name}}</label><br>
+    <label>Gender: {{.Gender}}</label><br>
+    <label>Age: {{.Age}}</label><br>
+    <label>Country: {{.Country}}</label><br>
+    {{end}}
+
+</body>

@@ -1,0 +1,32 @@
+<head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <title>Register Page</title>
+</head>
+
+<body>
+    <form action="/saveRegister" method="POST">
+        <label>Id</label><br>
+        <input type="text" name="id" /><br>
+        <label>Password</label><br>
+        <input type="password" name="password" /><br>
+        <label>Name</label><br>
+        <input type="text" name="name" /><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="man" /> Man
+        <input type="radio" name="gender" value="woman" /> Woman
+        <br>
+        <label>Age</label><br>
+        <input type="number" name="age" /><br>
+        <label>Country</label><br>
+        <select name="country">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Philippine">Philippine</option>
+            <option value="South Korea">South Korea</option>
+        </select>
+
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
